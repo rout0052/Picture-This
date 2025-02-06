@@ -17,9 +17,11 @@
     </div>
 
     <picture>
+        <!-- After receiving the email from Rob and re-reading the assignment where it said "determine which image sizes will be necessary", I began cascading the images as I had seen on the IMDAC, having pictures one viewport up and then having the CSS make it fit the width of the screen. The only one I wasn't able to crack to get the right version without a margin on the image side was the 1600px version. I am very interested in knowing what was supposed to work for this assignment!  -->
+
       <!-- SQUARE IMAGES -->
 
-      <!-- Viewport 1600px -->
+      <!-- Viewport 1600px  -->
       <source srcset="images/square/museum-square-800x.jpg, 
                       images/square/museum-square-1600x.jpg 2x,
                       images/square/museum-square-2400x.jpg 3x"
@@ -27,44 +29,49 @@
               media="(min-width: 1600px)"/>
 
       <!-- Viewport 1280px -->
-      <source srcset="images/square/museum-square-640x.jpg, 
-              images/square/museum-square-1280x.jpg 2x,
-              images/square/museum-square-1920x.jpg 3x"
+      <source srcset="images/square/museum-square-800x.jpg, 
+              images/square/museum-square-1600x.jpg 2x,
+              images/square/museum-square-2400x.jpg 3x"
               
               media="(min-width: 1280px)"/>
 
       <!-- Viewport 960px -->
-      <source srcset="images/square/museum-square-480x.jpg, 
-              images/square/museum-square-960x.jpg 2x,
-              images/square/museum-square-1440x.jpg 3x"
+      <source srcset="images/square/museum-square-640x.jpg, 
+              images/square/museum-square-1280x.jpg 2x,
+              images/square/museum-square-1920x.jpg 3x"
               
               media="(min-width: 960px)"/>
 
       <!-- LANDSCAPE IMAGES -->
-      
-      <!-- do what do i do for 959? max width? -->
 
       <!-- Viewport 720px -->
-      <source srcset="images/landscape/museum-landscape-720x.jpg, 
-              images/landscape/museum-landscape-1440x.jpg 2x,
-              images/landscape/museum-landscape-2160x.jpg 3x"
+      <source srcset="images/landscape/museum-landscape-960x.jpg, 
+              images/landscape/museum-landscape-1920x.jpg 2x,
+              images/landscape/museum-landscape-2880x.jpg 3x"
               
               media="(min-width: 720px)"/>
       
       <!-- Viewport 480px -->
-      <source srcset="images/landscape/museum-landscape-480x.jpg, 
-              images/landscape/museum-landscape-960x.jpg 2x,
-              images/landscape/museum-landscape-1440x.jpg 3x"
+      <source srcset="images/landscape/museum-landscape-720x.jpg, 
+              images/landscape/museum-landscape-1440x.jpg 2x,
+              images/landscape/museum-landscape-2160x.jpg 3x"
               
               media="(min-width: 480px)"/>        
 
       <!-- Viewport 320px -->
-      <source srcset="images/landscape/museum-landscape-320x.jpg, 
-              images/landscape/museum-landscape-640x.jpg 2x,
-              images/landscape/museum-landscape-960x.jpg 3x"
+      <source srcset="images/landscape/museum-landscape-480x.jpg, 
+                      images/landscape/museum-landscape-960x.jpg 2x,
+                      images/landscape/museum-landscape-1440x.jpg 3x"
               
               media="(min-width: 320px)"/>
 
+
+      <source srcset="images/landscape/museum-landscape-320x.jpg, 
+                      images/landscape/museum-landscape-640x.jpg 2x,
+                      images/landscape/museum-landscape-960x.jpg 3x"
+      
+              media="(max-width: 319px)"/>
+      
       <!-- ORIGINAL IMAGE -->
       <img class="orig-img"
         src="images/orig-museum.jpg" 
