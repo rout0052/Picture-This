@@ -31,6 +31,9 @@ h4 {
 
 img {
   display: block;
+  /* 2 lines added with advice from Rob, which caps the image size at the 100% of width and lets the height follow suit. */
+  max-width: 100%; 
+  height: auto; /* "height: auto" for old, cruddy browsers */
 }
 
 @media (min-width: 960px) {
